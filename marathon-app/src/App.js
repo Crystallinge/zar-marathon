@@ -1,17 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { ReactComponent as ReactBg } from "./assets/bg1.jpg";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World, React.JS!
-        </p>
-      </header>
-    </div>
+    <>
+      <Header title="This is title" descr="This is Description!" />
+      <Layout backgroundImage={ReactBg} />
+      <Layout backgroundColor="red" />
+      <Layout backgroundImage={ReactBg} />
+      <Footer title="THANKS FOR VISITING" descr="© 2021 #ReactMarathon." />
+    </>
   );
-}
+};
 
 export default App;
